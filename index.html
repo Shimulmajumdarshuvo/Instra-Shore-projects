@@ -103,7 +103,13 @@
                                     <div id="collapseTwo" class="accordion-collapse collapse"
                                         aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Event loop
+                                            জাভাস্ক্রিপ্ট রান টাইমে যখন কাজ করে তখন কিছু ডেটা synchronous আবার কিছু ডেটা
+                                            asynchronous ভাবে কাজ করে।
+                                            জাভাস্ক্রিপ্ট যখন overall এক্সিকিউট করে V8 দিয়ে , কিন্তু ওইটাকে ব্রাউজার
+                                            ম্যানেজ করে event loop এর মাধ্যমে। সেই event loop এর মধ্যে Stack , Queue and
+                                            Heap আছে। প্রথমে stack of frame sequentially মেইনটেইন করে। পরে asynchronous
+                                            ভাবে Queue থেকে ডেটাগুলো নিবে।
+                                            এভাবে জাভাস্ক্রিপ্ট event loop কাজ করে |
                                         </div>
                                     </div>
                                 </div>
