@@ -26,9 +26,9 @@
 </head>
 
 <body>
-    <header>
+    <header class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light px-5">
-            <a class="navbar-brand" href="#">My Insta-Sohor</a>
+            <a class="navbar-brand text-info" href="#">My Insta-Sohor</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -68,20 +68,29 @@
                 <h2 class="text-center text-info p-4">QUESTION PART</h2>
 
                 <div class="row">
+
+
+                    <div class="col-md-6">
+                        <div class="py-5">
+                            <img class=" img-fluid" src="images/project.jpg" alt="">
+                        </div>
+                    </div>
+
                     <div class="col-md-6">
                         <div class="pe-3 d-flex flex-column justify-content-center h-100">
-                            <div class="accordion" id="accordionExample">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
                                 <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
                                             How does javascript work?
                                         </button>
                                     </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                         <div class="accordion-body">
+
                                             জাভাস্ক্রিপ্টে V8 নামক ইঞ্জিন ব্যবহার করা হয় কম্পাইলার করার জন্য।
                                             জাভাস্ক্রিপ্ট একটা ইন্টারপ্রেটেড ল্যাঙ্গুয়েজ । জাভাস্ক্রিপ্ট কোডগুলো সরাসরি
                                             পড়ে পড়ে এক্সিকিউট করে । জাভাস্ক্রিপ্ট খুব দ্রুত আউটপুট দেখাতে পারে সেজন্য
@@ -89,19 +98,20 @@
                                             করে। জাভাস্ক্রিপ্টের কোডটা কে optimize করে Byte code এ ট্রানস্ফার করে যেটা
                                             কম্পিউটারের জন্য বোধগম্য। এভাবে জাভাস্ক্রিপ্ট V8 নামক ইঞ্জিন ব্যবহার করে
                                             পুরা প্রসেসটাকে এক্সিকিউট করে।
+
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
                                         <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
                                             What does javascript event loop?
                                         </button>
                                     </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse"
-                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                         <div class="accordion-body">
                                             জাভাস্ক্রিপ্ট রান টাইমে যখন কাজ করে তখন কিছু ডেটা synchronous আবার কিছু ডেটা
                                             asynchronous ভাবে কাজ করে।
@@ -110,19 +120,20 @@
                                             Heap আছে। প্রথমে stack of frame sequentially মেইনটেইন করে। পরে asynchronous
                                             ভাবে Queue থেকে ডেটাগুলো নিবে।
                                             এভাবে জাভাস্ক্রিপ্ট event loop কাজ করে |
+
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree">
+                                    <h2 class="accordion-header" id="flush-headingThree">
                                         <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                            aria-expanded="false" aria-controls="collapseThree">
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
                                             Write down the difference between localStorage and sessionStorage?
                                         </button>
                                     </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse"
-                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                                         <div class="accordion-body">
                                             লোকাল স্টোরেজ:
                                             <br>
@@ -145,15 +156,10 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="py-5">
-                            <img class=" img-fluid" src="images/project.jpg" alt="">
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>
